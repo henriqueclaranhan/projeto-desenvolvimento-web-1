@@ -12,6 +12,16 @@
     height: 2%;
   width: 100%;
 }
+.cabeco {
+  background-color: rgb(30, 30, 30);
+  margin: 10px;
+  padding: 21px;
+  z-index: 3;
+  height: 2%;
+width: 100%;
+bottom:0px;
+height: 3%;
+}
 .cabeca.header{
   top:0px;
   
@@ -38,6 +48,14 @@ body{
 }
 .akatsuki.bottom {
   padding-bottom: 100px;
+}
+a:link 
+{ 
+ text-decoration:none; 
+  
+} 
+font{
+  color: rgb(209, 206, 206);
 }
 .internoCard{
 right: -2%;
