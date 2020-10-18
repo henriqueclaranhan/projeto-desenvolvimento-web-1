@@ -73,9 +73,7 @@ padding-bottom: 0.8%;
     content: counter(fourth) ". ";
   }
   .img{
-    position: absolute;
+    position: relative;
     width: 40%;
     height: 60%;
-    right: 30%;
-    top: 20%;
   }
