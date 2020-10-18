@@ -47,7 +47,7 @@ body{
     top: 50px;
 }
 .akatsuki.bottom {
-  padding-bottom: 100px;
+  margin-bottom: 300px;
 }
 a:link 
 { 
@@ -96,4 +96,14 @@ text#corrido{
   ::-webkit-scrollbar-thumb:hover {
     background: gray; 
   }
-  
+  .rightmassa{
+    background-color: rgb(47, 47, 47);
+    display:inline-flex;
+  position: fixed;
+  right: 0;
+  top:0;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 0.8%;
+  }
