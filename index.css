@@ -68,7 +68,10 @@ border: 3px;
 margin: 3%;
 }
 text{
-    color:rgb(209, 206, 206);    
+    color:rgb(209, 206, 206);  
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;  
+    position: relative!important;
 }
 text#soueu{
   text-align: center;

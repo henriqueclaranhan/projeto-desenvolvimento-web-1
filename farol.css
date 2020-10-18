@@ -7,19 +7,23 @@
     position: relative;
     animation-name: startar2;
     animation-duration: 200ms;
-    padding: 5px;
+    padding: 5px;   
+    padding-bottom: 10%;
     top: 50px;
     left: 25px;
     width: 45%;
    height: 40%;
    display: inline-flex;
 }
-
+.divisor{
+  border-left: 1px;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: aliceblue;
+}
 .kkpaz{
-border-left: 1px;
-border-bottom: 0px;
-border-top: 0px;
-border-right: 0px;
 border-style: solid;
 border-color: aliceblue;
 background-color: rgb(47, 47, 47);
@@ -43,6 +47,9 @@ padding-bottom: 0.8%;
     padding-top: 1.5%;
     padding-bottom: 0.8%;
   }
+  .right.left{
+    left:67.7%;
+  }
   body{
     counter-reset: section;
     counter-reset: second;
@@ -64,4 +71,11 @@ padding-bottom: 0.8%;
   .counter4::before{
     counter-increment: fourth;
     content: counter(fourth) ". ";
+  }
+  .img{
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    right: 30%;
+    top: 20%;
   }
