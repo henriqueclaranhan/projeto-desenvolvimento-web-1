@@ -9,6 +9,59 @@
     animation-duration: 200ms;
     padding: 5px;
     top: 50px;
-    left: 1px;
-    width: 40%;
+    left: 25px;
+    width: 45%;
+   height: 40%;
+   display: inline-flex;
 }
+
+.kkpaz{
+border-left: 1px;
+border-bottom: 0px;
+border-top: 0px;
+border-right: 0px;
+border-style: solid;
+border-color: aliceblue;
+background-color: rgb(47, 47, 47);
+display:inline-flex;
+position: fixed;
+right: 0;
+top:0;
+padding-right: 3%;
+padding-left: 3%;
+padding-top: 1.5%;
+padding-bottom: 0.8%;
+}
+.right{
+    background-color: rgb(47, 47, 47);
+    display:inline-flex;
+    position:  absolute;
+    left:76.7%;
+    top:0;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 1.5%;
+    padding-bottom: 0.8%;
+  }
+  body{
+    counter-reset: section;
+    counter-reset: second;
+    counter-reset: third;
+    counter-reset: fourth;
+  }
+  .counter::before{
+    counter-increment: section;
+    content:  counter(section) ". ";
+  }
+  .counter2::before{
+    counter-increment: second;
+    content:  counter(second) ". ";
+  }
+  .counter3::before{
+    counter-increment: third;
+    content: counter(third) ". ";
+  }
+  .counter4::before{
+    counter-increment: fourth;
+    content: counter(fourth) ". ";
+  }
