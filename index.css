@@ -28,7 +28,8 @@ height: 3%;
 }
 .cabeca.footer{
   bottom:0px;
-  height: 1.8%;
+  padding-top: 6px;
+  height: 2%;
 }
 body{
   background-color: rgb(30, 30, 30);
