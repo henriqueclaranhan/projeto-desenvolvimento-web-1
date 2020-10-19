@@ -50,23 +50,32 @@ body{
 .akatsuki.bottom {
   margin-bottom: 300px;
 }
-a:link 
-{ 
+a:link { 
  text-decoration:none; 
-  
 } 
 font{
   color: rgb(209, 206, 206);
 }
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
 .internoCard{
+height: 87%;
 right: -2%;
 position: relative;
-width: 90%;
+width: 50%;
 background-color:rgb(30, 30, 30);
 border-style: solid;
 border-radius: 3px;
 border: 3px;
 margin: 3%;
+}
+.cardImg{
+  margin-left: 5%;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 3px;
 }
 text{
     color:rgb(209, 206, 206);    
