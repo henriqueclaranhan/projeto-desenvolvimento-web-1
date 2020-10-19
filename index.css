@@ -108,3 +108,30 @@ text#corrido{
   padding-top: 1.5%;
   padding-bottom: 0.8%;
   }
+  .pain{
+    width: 46.5%;
+    padding: 1%;
+    background-color: rgb(30, 30, 30);
+    margin: 10px;
+    border-style: solid;
+    border-radius: 3px;
+    border: 3px;
+    position: relative;
+    display: inline-flex;
+  }
+  .imgine{
+    width: 40%;
+    height: 300px;
+    left: 12.5%;
+    padding: 1%;
+    background-color: rgb(60, 60, 60);
+    margin: 10px;
+    border-style: solid;
+    border-radius: 3px;
+    border: 3px;
+   display: block;
+  }
+  .parabens{
+    align-items: flex-start;
+    text-align: justify;
+  }
