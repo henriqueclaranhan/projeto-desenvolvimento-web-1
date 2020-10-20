@@ -27,6 +27,7 @@ height: 3%;
   
 }
 .cabeca.footer{
+  z-index: 999;
   bottom:0px;
   padding-top: 6px;
   height: 2.5%;
@@ -123,7 +124,7 @@ text#corrido{
   padding-bottom: 0.8%;
   }
   .pain{
-    width: 46.5%;
+    width: 45.5%;
     padding: 1%;
     background-color: rgb(30, 30, 30);
     margin: 10px;
