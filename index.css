@@ -8,7 +8,7 @@
     padding: 20px;
     position: fixed !important;
     display: inline;
-    z-index: 3;
+    z-index: 99;
     height: 2%;
   width: 100%;
 }
