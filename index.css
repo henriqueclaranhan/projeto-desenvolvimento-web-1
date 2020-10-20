@@ -29,7 +29,7 @@ height: 3%;
 .cabeca.footer{
   bottom:0px;
   padding-top: 6px;
-  height: 2%;
+  height: 2.5%;
 }
 body{
   background-color: rgb(30, 30, 30);
@@ -50,23 +50,36 @@ body{
 .akatsuki.bottom {
   margin-bottom: 300px;
 }
-a:link 
-{ 
+a:link { 
  text-decoration:none; 
-  
 } 
 font{
   color: rgb(209, 206, 206);
 }
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
 .internoCard{
+height: 87%;
 right: -2%;
 position: relative;
-width: 90%;
+width: 50%;
 background-color:rgb(30, 30, 30);
 border-style: solid;
 border-radius: 3px;
 border: 3px;
 margin: 3%;
+transition: transform .11s;
+}
+.internoCard:hover{
+  transform: scale(1.1);
+}
+.cardImg{
+  margin-left: 5%;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 3px;
 }
 text{
     color:rgb(209, 206, 206);    
@@ -119,6 +132,14 @@ text#corrido{
     border: 3px;
     position: relative;
     display: inline-flex;
+    transition: transform .11s;
+  }
+  .pain:hover{
+    transform: scale(1.05);
+    z-index: 4;
+    border-style: solid;
+    border-width: 1px 1px;
+    border-color: slategray;
   }
   .imgine{
     width: 40%;

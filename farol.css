@@ -8,12 +8,20 @@
     animation-name: startar2;
     animation-duration: 200ms;
     padding: 5px;   
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     top: 50px;
     left: 25px;
     width: 45%;
    height: 40%;
    display: inline-flex;
+   transition: transform .11s;
+}
+.slice:hover{
+  transform: scale(1.03);
+  z-index: 4;
+  border-style: solid;
+  border-width: 1px 1px;
+  border-color: slategray;
 }
 .divisor{
   border-left: 1px;
