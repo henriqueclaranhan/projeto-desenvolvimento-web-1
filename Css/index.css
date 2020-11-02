@@ -1,0 +1,160 @@
+
+@keyframes startar2 {
+  from {right:100% ;}
+    to {right:0%;}   
+}
+.cabeca {
+    background-color: rgb(23, 23, 23);
+    padding: 20px;
+    position: fixed !important;
+    display: inline;
+    z-index: 99;
+    height: 2%;
+  width: 100%;
+}
+.cabeco {
+  background-color: rgb(30, 30, 30);
+  margin: 10px;
+  padding: 21px;
+  z-index: 3;
+  height: 2%;
+width: 100%;
+bottom:0px;
+height: 3%;
+}
+.cabeca.header{
+  top:0px;
+  
+}
+.cabeca.footer{
+  z-index: 999;
+  bottom:0px;
+  padding-top: 6px;
+  height: 2.5%;
+}
+body{
+  background-color: rgb(30, 30, 30);
+  margin: 0px;
+}
+.akatsuki {
+    background-color: rgb(47, 47, 47);
+    margin: 10px;
+    border-style: solid;
+    border-radius: 3px;
+    border: 3px;
+    position: relative;
+    animation-name: startar2;
+    animation-duration: 200ms;
+    padding: 5px;
+    top: 50px;
+}
+.akatsuki.bottom {
+  margin-bottom: 300px;
+}
+a:link { 
+ text-decoration:none; 
+} 
+font{
+  color: rgb(209, 206, 206);
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.internoCard{
+height: 87%;
+right: -2%;
+position: relative;
+width: 50%;
+background-color:rgb(30, 30, 30);
+border-style: solid;
+border-radius: 3px;
+border: 3px;
+margin: 3%;
+transition: transform .11s;
+}
+.internoCard:hover{
+  transform: scale(1.1);
+}
+.cardImg{
+  margin-left: 5%;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 3px;
+}
+text{
+    color:rgb(209, 206, 206);    
+    position: relative!important;
+}
+text#soueu{
+  text-align: center;
+}
+text#corrido{
+  text-align: justify; 
+}
+::-webkit-scrollbar {
+    width:5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white; 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+  }
+  .rightmassa{
+    background-color: rgb(47, 47, 47);
+    display:inline-flex;
+  position: fixed;
+  right: 0;
+  top:0;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 0.8%;
+  }
+  .pain{
+    width: 45.5%;
+    padding: 1%;
+    background-color: rgb(30, 30, 30);
+    margin: 10px;
+    border-style: solid;
+    border-radius: 3px;
+    border: 3px;
+    position: relative;
+    display: inline-flex;
+    transition: transform .11s;
+  }
+  .pain:hover{
+    transform: scale(1.05);
+    z-index: 4;
+    border-style: solid;
+    border-width: 1px 1px;
+    border-color: slategray;
+  }
+  .imgine{
+    width: 40%;
+    height: 300px;
+    left: 12.5%;
+    padding: 1%;
+    background-color: rgb(60, 60, 60);
+    margin: 10px;
+    border-style: solid;
+    border-radius: 3px;
+    border: 3px;
+   display: block;
+  }
+  .parabens{
+    align-items: flex-start;
+    text-align: justify;
+  }
