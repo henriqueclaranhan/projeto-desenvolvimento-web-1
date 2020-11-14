@@ -32,38 +32,38 @@
   border-color: aliceblue;
 }
 .kkpaz{
-border-style: solid;
-border-color: aliceblue;
-background-color: rgb(47, 47, 47);
-display:inline-flex;
-position: fixed;
-right: 0;
-top:0;
-padding-right: 3%;
-padding-left: 3%;
-padding-top: 1.5%;
-padding-bottom: 0.8%;
+  border-style: solid;
+  border-color: aliceblue;
+  background-color: rgb(47, 47, 47);
+  display:inline-flex;
+  position: fixed;
+  right: 0;
+  top:0;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 0.8%;
 }
 .right{
-    background-color: rgb(47, 47, 47);
-    display:inline-flex;
-    position:  absolute;
-    left:76.7%;
-    top:0;
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-top: 1.5%;
-    padding-bottom: 0.8%;
+  background-color: rgb(47, 47, 47);
+  display:inline-flex;
+  position:  absolute;
+  left:76.7%;
+  top:0;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 0.8%;
   }
   .right.left{
     left:67.7%;
   }
-  body{
-    counter-reset: section;
-    counter-reset: second;
-    counter-reset: third;
-    counter-reset: fourth;
-  }
+body{
+  counter-reset: section;
+  counter-reset: second;
+  counter-reset: third;
+  counter-reset: fourth;
+ }
   .counter::before{
     counter-increment: section;
     content:  counter(section) ". ";
