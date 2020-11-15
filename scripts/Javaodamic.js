@@ -224,7 +224,7 @@ var trabalhos = [
                 nomeDeus: "Hermes",
                 resumo: "Deus grego da riqueza, da sorte,Filho de Zeus e da ninfa Maia.",
                 total: "Deus grego da riqueza, da sorte, da fertilidade, do sono, da magia, das viagens, das estradas, do comércio, da linguagem e dos ladrões.Filho de Zeus e da ninfa Maia, Hermes era o pai do deus Pan, patrono da ginástica, era o deus das competições esportivas e seu nome está ligado às Olimpíadas.",
-                src: ".ibagensDosGrupos/"
+                src: ""
             },
             {
                 nomeDeus: "Exu",
@@ -544,6 +544,10 @@ function criarCabecalho(){
 }
 
 let criarDivindades=(equipe)=>{
+
+    var tituloDeEleitor = document.createElement('h1')
+    tituloDeEleitor.style="text-align: center;"
+    tituloDeEleitor.innerHTML = `<text>${equipe.nomeEquipe}`;
     
     var contente = document.querySelector('#contente');
     contente.innerHTML='';
@@ -551,38 +555,29 @@ let criarDivindades=(equipe)=>{
     dividendo.className = "akatsuki";
     contente.appendChild(dividendo);
 
+    dividendo.appendChild(tituloDeEleitor)
+
     equipe.dados.forEach(equipi=>{
-    console.log(equipi);
-    var divAcatsque = document.createElement('div');
-    divAcatsque.className = "pain";
-    divAcatsque.innerHTML= `<text><h1>${equipi.nomeDeus}</h1><br><h2>Resumo:</h2><br>${equipi.resumo}<br><h2>Historia Completa:</h2><br>${equipi.total}<br>`;
+        console.log(equipi);
+        var divAcatsque = document.createElement('div');
+        divAcatsque.className = "pain";
+        divAcatsque.innerHTML= `<text style="text-align:justify;"><h1>${equipi.nomeDeus}</h1><br><h2>Resumo:</h2>${equipi.resumo}<br><br><h2>Historia Completa:</h2>${equipi.total}<br>`;
         
-    var h1 = document.createElement('h1');
-    h1.innerHtml=` `;
-    h1.style="text-align: center;";
-    var img = document.createElement('img');
-    img.src=equipi.src;
-    dividendo.appendChild(divAcatsque);
-    divAcatsque.appendChild(img);
+        var h1 = document.createElement('h1');
+        h1.innerHtml=` `;
+        h1.style="text-align: center;";
+        var img = document.createElement('img');
+        img.className = "imgine"
+        img.src=equipi.src;
+        dividendo.appendChild(divAcatsque);
+        divAcatsque.appendChild(img);
     
 
 }
 )
-
-/**
- *   <div class="akatsuki">
-   
-    <text>
-      <h1 style="text-align: center;">
-      
-      </h1>
-      <div class="pain">
-        <script src="">
-            </script>
-        </div>
-        
-  </div>
- */
+    var arrumador = document.createElement('div');
+    arrumador.className = "akatsuki bottom";
+    contente.appendChild(arrumador);
 }
 
 let criarFooter=()=>{
@@ -604,15 +599,16 @@ function carregarEquipe(equipe){
     criarCabecalho();
     criarFooter();
     criarDivindades(equipe);
+    window.scroll(0,0);
 
 }
 
-function criarInternoCard(){
-    var int=0;
+function criarInternoCard(){    
+
     trabalhos.forEach( Equipe => {
         let zelda = document.createElement('a')
         console.log(Equipe)
-        Equipe.int=int;
+       
         Equipe.dados.forEach(dados=>{
             dados.src+=`./ibagensDosGrupos/${Equipe.nomeEquipe}/${dados.nomeDeus}_resumo.png`;}
         )
@@ -645,8 +641,6 @@ function criarInternoCard(){
         internoCard.appendChild(ibagem)
         
         internoCard.addEventListener("click",  function(){ carregarEquipe(Equipe) })
-
-        int++;
     });
 }
 
@@ -655,19 +649,3 @@ function carregar(){
 }
 
 carregar()
-
-/**
- *  <text>
-      <h1 style="text-align: center;">
-       Titulo
-      </h1>
-      <div class="pain">
-          <h2> Deus1</h2><br/>
-          <img class="imgine" src="../imagens/noss.jpg"/>
-          <br/>
-          <p class="parabens">
-              </p>
-          </div>
-          
-        </div>
- */

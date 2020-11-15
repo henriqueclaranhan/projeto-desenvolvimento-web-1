@@ -1,3 +1,21 @@
+@media screen and (max-width: 900px) {
+  .slice {
+    max-width: 85%;
+  }
+}
+@media screen and (min-width: 901px){
+  .slice {
+    width: 45%;
+  }
+  .slice:hover{
+    transform: scale(1.03);
+    z-index: 4;
+    border-style: solid;
+    border-width: 1px 1px;
+    border-color: slategray;
+  }
+}
+
 .slice{
     background-color: rgb(47, 47, 47);
     margin: 10px;
@@ -10,19 +28,12 @@
     padding: 5px;   
     padding-bottom: 5%;
     top: 50px;
-    left: 25px;
-    width: 45%;
+    left: 13px;
    height: 40%;
    display: inline-flex;
    transition: transform .11s;
 }
-.slice:hover{
-  transform: scale(1.03);
-  z-index: 4;
-  border-style: solid;
-  border-width: 1px 1px;
-  border-color: slategray;
-}
+
 .divisor{
   border-left: 1px;
   border-bottom: 0px;
