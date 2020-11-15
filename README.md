@@ -1,6 +1,6 @@
 # projeto-desenvolvimento-web-1
 Projeto de site da disciplina de Desenvolvimento Web 1, do Curso Técnico Integrado em Informática do IFMS.
 
-Atualmente utilizavel no celular(não tão responsivo)
+Atualmente utilizavel no celular(90% responsivo)
 
 Veja: https://henriqueclaranhan.github.io/projeto-desenvolvimento-web-1/
