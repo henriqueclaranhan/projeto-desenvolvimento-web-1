@@ -1,20 +1,20 @@
 
 function newPopup(){
-    sobrenos = window.open  (
+    var sobrenos = window.open  (
     '/Html/popup.html',
     'pagina',
     "width=350, height=255, top=300, left=110, scrollbars=no, titlebar='sobre nós' " );
     sobrenos.document.writer("Quem vos escreve sou eu João Lucas Paes, quer entrar em contato comigo? Me mande um email no seguinte endereço eletronico: joao.paes@estudante.ifms.edu e se quiser entrar em contato com meu parcero de grupo Henrique? use o seguinte endereço eletronico: henrique.oliveira3@estudante.ifms.edu.br<br/>Somos estudantes do ensino médio regular do IFMS campus Campo Grande.");
 };
 function newPopup2(){
-    corte = window.open  (
+    var corte = window.open  (
     '/Html/corte.html',
     'pagina',
     "width=350, height=255, top=300, left=110, scrollbars=no, titlebar='sobre nós' " );
      sobrenos.document.writer("Quem vos escreve sou eu João Lucas Paes, quer entrar em contato comigo? Me mande um email no seguinte endereço eletronico: joao.paes@estudante.ifms.edu e se quiser entrar em contato com meu parcero de grupo Henrique? use o seguinte endereço eletronico: henrique.oliveira3@estudante.ifms.edu.br<br/>Somos estudantes do ensino médio regular do IFMS campus Campo Grande.");
 };
 function newPopup3(){
-    sobrenos = window.open  (
+    var sobrenos = window.open  (
     'Html/popup.html',
     'pagina',
     "width=350, height=255, top=300, left=110, scrollbars=no, titlebar='sobre nós' " );
@@ -27,7 +27,7 @@ var trabalhos = [
         dados:
         [
             {
-                nomeDeus: "Aranju",
+                nomeDeus: "Aganju",
                 resumo: "Orixá do fogo e dos vulcões, e por isso muitas vezes confundido com Xangô. Segundo a mitologia, Aganju é um guerreiro muito velho e, tal como a lava dos vulcões, vive no fundo da terra, de onde sai de vez em quando.",
                 total: "Orixá do fogo e dos vulcões, e por isso muitas vezes confundido com Xangô. Segundo a mitologia, Aganju é um guerreiro muito velho e, tal como a lava dos vulcões, vive no fundo da terra, de onde sai de vez em quando. Aganju é cultuado como um ancestral na Nigéria e como um Orixá na Diáspora africana. Aganju foi o quinto alafim no Império de Oió, era filho de Ajaka, neto de Oraniã e sobrinho de Xangô. Quando Xangô caiu, Dadá Ajacá voltou à Oyó e reassumiu como o quarto alafim de Oyó. Após sua morte, o trono foi herdado por Aganju, quinto alafim de Oyó e neto de Oraniã. No Brasil Aganju é cultuado como uma qualidade de Xangô, muitas vezes chamado de Xangô Aganju. É o Orixá que representa tudo que é explosivo, que não tem controle, ele é a personificação dos Vulcões.",
                 src: ""
@@ -181,7 +181,7 @@ var trabalhos = [
                 src: ""
             },
             {
-                nomeDeus: "Ra",
+                nomeDeus: "Rá",
                 resumo: "É o Deus sol do antigo Egito, e criador do mundo.. Sendo a principal divindade da religião egípcia. E, em função da luz no cultivo dos alimentos, os antigos egípcios atribuíram a Rá grande importância.",
                 total: "Rá ou Ré é o deus do Sol do Antigo Egito. No período da Quinta Dinastia se tornou uma das principais divindades da religião egípcia, identificado primordialmente com o sol do meio-dia. O principal centro de seu culto era a cidade de Heliópolis (chamada de Inun, \"Local dos Pilares\", em egípcio), onde era identificado com o deus solar local, Atum. Além de ser a divindade central do panteão egípcio, Rá é também um deus primordial e criador dos deuses e da ordem divina, junto de sua esposa, a Deusa Ret (cujo nome é a versão feminina do nome Ré e pode ser a mesma divindade) originaram a genealogia: Shu e Tefnut, Geb e Nut, Osíris, Seth, Ísis e Néftis. Rá foi representado de várias formas. A forma mais comum era um homem com a cabeça de um falcão e um disco solar no topo e uma serpente enrolada ao redor do disco. Rá, o Deus do Sol era representado comumente pelo o sol do meio-dia e possuía o obelisco como insígnia, o qual era considerado um raio do sol petrificado. Na sua forma animal, poderia transmutar-se em falcão, leão, gato, ou no pássaro Benu. Note que o Deus Sol possuía quatro fases: a primeira ao nascer do sol, a segunda ao meio-dia, a terceira ao pôr-do-sol e a quarta fase durante a noite. Contudo, a principal fase é a do meio-dia, quando ele é representado por uma ave, comumente o falcão. Segundo a mitologia egípcia, todas as formas de vida foram criadas por Rá, ao pronunciar seus nomes secretos. Outras versões também afirmam que os seres humanos teríamos sido criados a partir das lágrimas e suor de Rá, o qual ficará tão esgotado pelo trabalho da criação que lhe fora atribuído por seu pai Nun, que chorou, e de suas lágrimas abrolharam o homem e a mulher.",
                 src: ""
@@ -544,16 +544,28 @@ function criarCabecalho(){
 }
 
 let criarDivindades=(equipe)=>{
-    equipe.forEach(equipe=>{
-
+    
     var contente = document.querySelector('#contente');
-    contente.innerHTML = '';
+    contente.innerHTML='';
+    var dividendo = document.createElement('div');
+    dividendo.className = "akatsuki";
+    contente.appendChild(dividendo);
 
-    var divAcatsque = document.createElement('div')
-    divAcatsque.className = "akatsuki"
+    equipe.dados.forEach(equipi=>{
+    console.log(equipi);
+    var divAcatsque = document.createElement('div');
+    divAcatsque.className = "pain";
+    divAcatsque.innerHTML= `<text><h1>${equipi.nomeDeus}</h1><br><h2>Resumo:</h2><br>${equipi.resumo}<br><h2>Historia Completa:</h2><br>${equipi.total}<br>`;
+        
+    var h1 = document.createElement('h1');
+    h1.innerHtml=` `;
+    h1.style="text-align: center;";
+    var img = document.createElement('img');
+    img.src=equipi.src;
+    dividendo.appendChild(divAcatsque);
+    divAcatsque.appendChild(img);
+    
 
-    var texto = document.createElement('text')
-    var h1 = document.createElement('h1')
 }
 )
 
@@ -596,11 +608,11 @@ function carregarEquipe(equipe){
 }
 
 function criarInternoCard(){
+    var int=0;
     trabalhos.forEach( Equipe => {
         let zelda = document.createElement('a')
-        
         console.log(Equipe)
-  
+        Equipe.int=int;
         Equipe.dados.forEach(dados=>{
             dados.src+=`./ibagensDosGrupos/${Equipe.nomeEquipe}/${dados.nomeDeus}_resumo.png`;}
         )
@@ -634,6 +646,7 @@ function criarInternoCard(){
         
         internoCard.addEventListener("click",  function(){ carregarEquipe(Equipe) })
 
+        int++;
     });
 }
 
