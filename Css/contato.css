@@ -1,0 +1,108 @@
+* {
+    border: 0;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#login-box{
+    display: inline-table;
+    z-index: 2;
+    position: fixed;
+    border-radius: 8px;
+    width: 350px;
+    max-height: 400px;
+    padding: 1.2rem;
+    background: rgb(47, 47, 47);
+    box-shadow: 0 5px 15px #1413148e;
+    transition: 0.25s ease-in-out;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#title{
+    color: white;
+    margin-bottom: 1rem;
+}
+#create-account, #create-account a{
+    color: white;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.input-field #msg-input{
+    resize: none;
+    width: 98%;
+    height: 135px;
+}
+
+.input-field input, .input-field #msg-input{
+    background-color: rgba(90, 83, 83, 0.692);
+    color: white;
+    padding-left: 8px;
+    border-radius: 1px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    height: 40px;
+    width: 98%;
+}
+#login-box div:not(:last-child){
+    margin-bottom: 6.5px;
+}
+.input-field input:focus{
+    transition: 0.25s ease;
+    outline-color: #555555;
+    outline-style: solid;
+    outline-width: medium;
+}
+.input-field textarea:focus{
+    transition: 0.25s ease;
+    outline-color: #555555;
+    outline-style: solid;
+    outline-width: medium;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px rgb(90, 83, 83) inset !important;
+    -webkit-text-fill-color: white !important;
+}
+::placeholder { 
+    color: white;
+    opacity: 80%;
+    font-weight: 400;
+}
+:-ms-input-placeholder {
+    color: white;
+    
+}
+::-ms-input-placeholder {
+    color: white;
+}
+#login-box input[type="submit"]{
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 3px;
+    outline: none;
+    background-color: #3eb975;
+    color: white;
+    box-shadow: 0 0 8px #3d4b3ed2;
+}
+span{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.radio, p{
+    color: white;
+    margin-right: 6px;
+}
+#JsContinue{
+    width: 100%;
+}
